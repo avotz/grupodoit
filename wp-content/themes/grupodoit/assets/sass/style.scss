@@ -161,6 +161,18 @@ html,body{
              h2{
                 text-transform: uppercase;
                 font-weight: 900;
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    height: 2px;
+                    background-color: $rojo;
+                    width: 100px;
+                    margin: 0 auto;
+                    left:0;
+                    right: 0;
+                }
              }
              p{
                 font-weight: 300;
@@ -206,6 +218,7 @@ html,body{
          h2{
                 text-transform: uppercase;
                 font-weight: 900;
+                
              }
     }
     

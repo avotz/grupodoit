@@ -1718,6 +1718,19 @@ html, body {
 .section .info h2 {
   text-transform: uppercase;
   font-weight: 900;
+  position: relative;
+}
+
+.section .info h2:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  background-color: #DA3A3F;
+  width: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .section .info p {
