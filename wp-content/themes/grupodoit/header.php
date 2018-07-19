@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
  <div class="header header-fixed">
         <div class="inner">
-           <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg"></a>
+           <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
              
             <?php
 			wp_nav_menu(array(

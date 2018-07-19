@@ -11168,7 +11168,7 @@ if (isHome()) {
 
     new fullpage('#fullpage', {
         //options here
-        controlArrows: false,
+        controlArrows: true,
         fitToSection: true,
         autoScrolling: true,
         scrollHorizontally: false,

@@ -38,13 +38,7 @@ get_header();
 
                         </div>
                     </div>
-                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner3.jpg')">
-                        <div class="banner-slide-title">
-                        
-                        <h2>Grupo Do It</h2>
-
-                        </div>
-                    </div>
+                    
                     
                            
                   </div>
@@ -64,14 +58,18 @@ get_header();
                 ?>
           
                 
-                <div class="section section-history" id="section-history" style="background-image: url('<?php echo esc_url($thumb_url[0]) ?>');">
+                <div class="section section-history" id="section-history" >
               <?php else: ?>
                    <div class="section section-history" id="section-history">
               <?php endif; ?>
-              
-                  <div class="info">
-                          <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
+                
+                  <div class="info flex-container-sb">
+                      <div class="info-img" style="background-image: url('<?php echo esc_url($thumb_url[0]) ?>');"></div>
+                      <div class="info-content">
+                            <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
                             <?php the_content(); ?>
+                      </div>
+                         
                         
                   </div>
               </div>
@@ -195,7 +193,7 @@ get_header();
 
                      <?php 
                     $postType = 'gas-station';
-                    include(locate_template('template-parts/content-slide.php'));
+                    include(locate_template('template-parts/content-slide-gas.php'));
                      //get_template_part( 'template-parts/content-retail.php'); ?>
                  
                   <?php endwhile; ?>
