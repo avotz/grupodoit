@@ -42,4 +42,8 @@
 				<i class="fas fa-bars"></i>
 			</button>
         </div>
+		<div class="header-lang">
+			<a href="<?php echo esc_url(home_url('/en')); ?>">EN</a> | 
+			<a href="<?php echo esc_url(home_url('/es')); ?>">ES</a>
+		</div>
     </div>

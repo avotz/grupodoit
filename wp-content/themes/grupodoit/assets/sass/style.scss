@@ -46,6 +46,15 @@ html,body{
     width:100%;
     z-index: 100;
     background: $rojo;
+    &-lang{
+        position: absolute;
+        right: 3.5rem;
+        top: 1rem;
+        color: white;
+        a{
+            color: white;
+        }
+    }
     &-logo{
         display:inline-block;
         max-width:100px;
@@ -93,11 +102,15 @@ html,body{
         }
     }
     .header{
+        &-lang{
+            right: 1rem;
+        }
         &-menu{
             position: static;
             float:right;
             display: block !important;
             background-color: transparent;
+            padding-right: 2rem;
 
             li{
                 display: inline-block;
@@ -338,9 +351,10 @@ html,body{
 .main{
     padding-top: 6rem;
 }
-	
-	
-	
+    
 
+	
+	
+@import "blog";
 	
     
