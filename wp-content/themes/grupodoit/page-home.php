@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -8,7 +9,7 @@
  * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
+ * Template Name: Page Home
  * @package grupodoit
  */
 
@@ -81,45 +82,45 @@ get_header();
         <div class="section section-portfolio" id="section-portfolio">
           <div class="slide" id="portfolio-home" data-anchor="portfolio-home">
                 <div class="info-portfolio">
-                  <h2>Portfolio</h2>
+                  <h2><?php pll_e('Portfolio'); ?></h2>
                   <div class="portfolio-container flex-container-sb">
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/retail-imports')); ?>" data-href="#portfolio/retail-imports">Retail & Import</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('retail-imports'))); ?>" data-href="#portfolio/retail-imports"><?php pll_e('Retail & Import'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/retail-imports')); ?>" data-href="#portfolio/retail-imports"><img src="<?php echo get_template_directory_uri(); ?>/img/retail-import.jpg"></a>
+                            <a href="<?php echo esc_url(home_url(pll__('retail-imports'))); ?>" data-href="#portfolio/retail-imports"><img src="<?php echo get_template_directory_uri(); ?>/img/retail-import.jpg"></a>
                           </div>
                       </div>
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/real-estate-development')); ?>" data-href="#portfolio/real-estate-development">Real Estate & Development</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('real-estate-development'))); ?>" data-href="#portfolio/real-estate-development"><?php pll_e('Real Estate & Development'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/real-estate-development')); ?>" data-href="#portfolio/real-estate-development">
+                            <a href="<?php echo esc_url(home_url(pll__('real-estate-development'))); ?>" data-href="#portfolio/real-estate-development">
                               <img src="<?php echo get_template_directory_uri(); ?>/img/real-estate.jpg">
                             </a>
                           </div>
 
                       </div>
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/building-materials')); ?>" data-href="#portfolio/building-materials">Building Materials</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('building-materials'))); ?>" data-href="#portfolio/building-materials"><?php pll_e('Building Materials'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/building-materials')); ?>" data-href="#portfolio/building-materials"><img src="<?php echo get_template_directory_uri(); ?>/img/building-materials.jpg"></a>
+                            <a href="<?php echo esc_url(home_url(pll__('building-materials'))); ?>" data-href="#portfolio/building-materials"><img src="<?php echo get_template_directory_uri(); ?>/img/building-materials.jpg"></a>
                           </div>
                       </div>
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/tourism-page')); ?>" data-href="#portfolio/tourism">Tourism</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('tourism-page'))); ?>" data-href="#portfolio/tourism"><?php pll_e('Tourism'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/tourism-page')); ?>" data-href="#portfolio/tourism"><img src="<?php echo get_template_directory_uri(); ?>/img/tourism.jpg"></a>
+                            <a href="<?php echo esc_url(home_url(pll__('tourism-page'))); ?>" data-href="#portfolio/tourism"><img src="<?php echo get_template_directory_uri(); ?>/img/tourism.jpg"></a>
                           </div>
                       </div>
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/gas-stations')); ?>" data-href="#portfolio/gas-station">Gas Stations</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('gas-stations'))); ?>" data-href="#portfolio/gas-station"><?php pll_e('Gas Stations'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/gas-stations')); ?>" data-href="#portfolio/gas-station"><img src="<?php echo get_template_directory_uri(); ?>/img/gas-station.jpg"></a>
+                            <a href="<?php echo esc_url(home_url(pll__('gas-stations'))); ?>" data-href="#portfolio/gas-station"><img src="<?php echo get_template_directory_uri(); ?>/img/gas-station.jpg"></a>
                           </div>
                       </div>
                       <div class="portfolio-item">
-                          <h3><a href="<?php echo esc_url(home_url('/non-Profit')); ?>" data-href="#portfolio/non-profit">Non-Profit</a></h3>
+                          <h3><a href="<?php echo esc_url(home_url(pll__('non-Profit'))); ?>" data-href="#portfolio/non-profit"><?php pll_e('Non-Profit'); ?></a></h3>
                           <div class="portfolio-item-img">
-                            <a href="<?php echo esc_url(home_url('/non-Profit')); ?>" data-href="#portfolio/non-profit"><img src="<?php echo get_template_directory_uri(); ?>/img/non-profit.jpg"></a>
+                            <a href="<?php echo esc_url(home_url(pll__('non-Profit'))); ?>" data-href="#portfolio/non-profit"><img src="<?php echo get_template_directory_uri(); ?>/img/non-profit.jpg"></a>
                           </div>
                       </div>
                   </div>
@@ -235,12 +236,19 @@ get_header();
             <?php else : ?>
                 <div class="section section-contact" id="section-contact" style="background-color: #DA3A3F">
             <?php endif; ?>
-                  <div class="info">
-
-                      <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
-                        <?php the_content(); ?>
-                    
+                <div class="info flex-container-sb">
+                      <div class="info-img">
+                        
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.2805620397944!2d-85.59501248471683!3d10.557204366087396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9fd53076a47e0f%3A0xf1f9ae736cb9eb35!2sEl+Lagar+Do+It+Center!5e0!3m2!1ses-419!2scr!4v1532454515333" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                      <div class="info-content">
+                           <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
+                            <?php the_content(); ?>
+                      </div>
+                         
+                        
                   </div>
+                 
                 </div>
                 <?php endwhile; ?>
                 <!-- post navigation -->

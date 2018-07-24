@@ -163,3 +163,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/translate-strings.php';
+

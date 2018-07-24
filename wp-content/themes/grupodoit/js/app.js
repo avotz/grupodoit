@@ -11185,7 +11185,7 @@ if (isHome()) {
     });
 }
 
-$('.portfolio-item').on('click', 'a', function (e) {
+$('.info-portfolio .portfolio-item').on('click', 'a', function (e) {
     e.preventDefault();
 
     if (!isSmall()) {
