@@ -27,7 +27,7 @@ get_header();
                        <div class="banner-slide-title">
                         
                         
-                        <h2>Grupo Do It</h2>
+                        <h2>We are Grupo Do It</h2>
 
                       </div>
 
@@ -35,7 +35,7 @@ get_header();
                     <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg')">
                         <div class="banner-slide-title">
                         
-                         <h2>Grupo Do It</h2>
+                         <h2>We help you build the future</h2>
 
                         </div>
                     </div>
