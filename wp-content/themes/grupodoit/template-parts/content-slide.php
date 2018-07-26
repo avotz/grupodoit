@@ -40,7 +40,7 @@
                     $items->the_post();
 
                     ?>
-                   <div class="portfolio-item">
+                   <div class="portfolio-item animated revealslide">
                         <h3> <?php the_title() ?></h3>
                         <div class="portfolio-item-img">
                             <?php if (has_post_thumbnail()) :

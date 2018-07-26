@@ -11198,7 +11198,7 @@ $('.info-portfolio .portfolio-item').on('click', 'a', function (e) {
 $('.banner-slider').slick({
     dots: false,
     autoplay: true,
-    speed: 500,
+    speed: 900,
     arrows: false,
     cssEase: 'linear',
     fade: true,
