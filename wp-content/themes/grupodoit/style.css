@@ -4848,9 +4848,9 @@ iframe {
 .search-submit,
 .comment-form .submit,
 .wpcf7-submit {
-  background-color: #000;
-  background-color: #000;
-  border-color: #000;
+  background-color: #DA3A3F;
+  background-color: #DA3A3F;
+  border-color: #DA3A3F;
   color: #fff;
   border: none;
 }
@@ -4935,7 +4935,7 @@ html, body {
 
 .header {
   position: fixed;
-  height: 65px;
+  height: 50px;
   left: 0;
   right: 0;
   top: 0;
@@ -4947,7 +4947,7 @@ html, body {
 .header-lang {
   position: absolute;
   right: 3.5rem;
-  top: 1rem;
+  top: .5rem;
   color: white;
 }
 
@@ -4957,7 +4957,7 @@ html, body {
 
 .header-logo {
   display: inline-block;
-  max-width: 100px;
+  max-width: 85px;
   padding-top: 3px;
 }
 
@@ -4976,7 +4976,7 @@ html, body {
 }
 
 .header-menu a {
-  padding: 1rem 1rem;
+  padding: .6rem 1rem;
   display: block;
   color: white;
   text-transform: uppercase;
@@ -5135,14 +5135,30 @@ html, body {
 }
 
 .section-history .info-img {
-  width: 48%;
+  width: 42%;
   height: 350px;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  background-color: white;
+}
+
+.section-history .info-img:after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+  border: 2px solid black;
 }
 
 .section-history .info-content {
-  width: 50%;
+  width: 55%;
+}
+
+.section-history .info p {
+  font-weight: 400;
 }
 
 .section-portfolio {
@@ -5156,6 +5172,19 @@ html, body {
 .section-portfolio .info-portfolio h2 {
   text-transform: uppercase;
   font-weight: 900;
+  position: relative;
+}
+
+.section-portfolio .info-portfolio h2:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  height: 2px;
+  background-color: #DA3A3F;
+  width: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 .portfolio-item {
@@ -5169,11 +5198,13 @@ html, body {
 }
 
 .portfolio-item-img.featured img {
-  height: auto;
+  height: 150px;
 }
 
 .portfolio-item h3, .portfolio-item h4 {
   color: #DA3A3F;
+  font-weight: 900;
+  margin-bottom: 0;
 }
 
 .portfolio-item h4 {
@@ -5181,7 +5212,7 @@ html, body {
   margin-bottom: 0;
 }
 
-#portfolio-home img {
+#portfolio-home img, #non-profit img {
   height: auto;
 }
 
@@ -5198,7 +5229,7 @@ html, body {
 }
 
 .section-contact {
-  padding: 0 6% 0 6%;
+  padding: 3% 6% 0 6%;
 }
 
 .section-contact .info {
@@ -5218,15 +5249,37 @@ html, body {
 }
 
 .section-contact .info-content {
-  width: 35%;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .section-contact .info-content h2:after {
   background-color: white;
 }
 
+.section-contact .social {
+  color: white;
+}
+
+.section-contact .social a {
+  display: inline-block;
+  padding: .5rem;
+  color: white;
+}
+
+.section-contact .social .icon {
+  font-size: 2rem;
+  color: #DA3A3F;
+  padding-right: .5rem;
+}
+
 .section-contact .wpcf7 {
   text-align: left;
+}
+
+.fp-viewing-portfolio-portfolio-home .custom-fp-prev {
+  display: none !important;
 }
 
 .fp-controlArrow.fp-next {
@@ -5235,6 +5288,29 @@ html, body {
 
 .fp-controlArrow.fp-prev {
   border-color: transparent #DA3A3F transparent transparent;
+  display: none !important;
+}
+
+.custom-fp-prev {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #DA3A3F transparent transparent;
+  display: block;
 }
 
 .entry-title {

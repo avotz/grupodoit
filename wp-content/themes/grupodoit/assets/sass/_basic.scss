@@ -283,9 +283,9 @@ iframe{
 .comment-form .submit,
 .wpcf7-submit{
     @extend %btn-shared;
-    background-color: #000;
-    background-color: #000;
-	border-color: #000;
+    background-color: $rojo;
+    background-color: $rojo;
+	border-color: $rojo;
 	color: #fff;
 	border: none;
     &:hover{

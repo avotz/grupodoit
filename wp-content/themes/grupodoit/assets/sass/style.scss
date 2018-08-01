@@ -51,7 +51,7 @@ html,body{
 
 .header{
     position:fixed;
-    height:65px;
+    height:50px;//65px;
     left: 0;
     right: 0;
     top: 0;
@@ -61,7 +61,7 @@ html,body{
     &-lang{
         position: absolute;
         right: 3.5rem;
-        top: 1rem;
+        top: .5rem;
         color: white;
         a{
             color: white;
@@ -69,7 +69,7 @@ html,body{
     }
     &-logo{
         display:inline-block;
-        max-width:100px;
+        max-width:85px;
         //background: white;
         padding-top: 3px;
     }
@@ -85,7 +85,7 @@ html,body{
             display: block;
         }
         a{
-            padding: 1rem 1rem;
+            padding: .6rem 1rem;
             display:block;
             color: white;
             text-transform: uppercase;
@@ -242,15 +242,31 @@ html,body{
          color: #000;
          text-shadow: none;
          font-size: 1.5rem;
+        
          &-img{
-             width: 48%;
+             width: 42%;
              height: 350px;
              background-size: cover;
              background-repeat: no-repeat;
+             position: relative;
+             background-color: white;
+             &:after{
+                content: '';
+                position: absolute;
+                left:-5px;
+                right: -5px;
+                bottom: -5px;
+                top: -5px;
+                border: 2px solid black;
+                
+             }
          }
          &-content{
-             width: 50%;
+             width: 55%;
          }
+         p{
+                font-weight: 400;
+             }
     }
 }
 .section-portfolio{
@@ -262,7 +278,18 @@ html,body{
          h2{
                 text-transform: uppercase;
                 font-weight: 900;
-                
+                position: relative;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -15px;
+                    height: 2px;
+                    background-color: $rojo;
+                    width: 100px;
+                    margin: 0 auto;
+                    left:0;
+                    right: 0;
+                }
              }
     }
     
@@ -279,12 +306,14 @@ html,body{
                 }
                 &.featured{
                     img{
-                        height: auto;
+                        height: 150px;// auto;
                     }
                 }
             }
             h3,h4{
                 color:$rojo;
+                font-weight: 900;
+                margin-bottom: 0;
             }
             h4{
                 font-weight: 900;
@@ -292,7 +321,7 @@ html,body{
             }
         }
     }
-#portfolio-home{
+#portfolio-home, #non-profit{
     img{
         height: auto;
     }
@@ -322,7 +351,7 @@ html,body{
     
 }
 .section-contact{
-    padding: 0 6% 0 6%;
+    padding: 3% 6% 0 6%;
      .info{
          font-size: 1.2rem;
          &-img{
@@ -336,13 +365,28 @@ html,body{
              }
          }
          &-content{
-             width: 35%;
+             width: 100%;
+             max-width: 650px;
+             margin: 0 auto;
              h2{
                  &:after{
                      background-color: white;
                  }
              }
          }
+    }
+    .social{
+        color: white;
+        a{
+            display: inline-block;
+            padding: .5rem;
+            color: white;
+        }
+        .icon{
+            font-size: 2rem;
+            color: $rojo;
+            padding-right: .5rem;
+        }
     }
     .wpcf7{
         text-align: left;
@@ -364,13 +408,39 @@ html,body{
 //         display:none;
 //     }
 // }
+.fp-viewing-portfolio-portfolio-home{
+    .custom-fp-prev{
+        display: none !important;
+    }
+}
 .fp-controlArrow.fp-next{
     border-color: transparent transparent transparent $rojo;
 
 }
 .fp-controlArrow.fp-prev{
     border-color: transparent $rojo transparent transparent;
-
+    display: none !important;
+}
+.custom-fp-prev{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent $rojo transparent transparent;
+    display: block;
 }
 
 .entry-title{

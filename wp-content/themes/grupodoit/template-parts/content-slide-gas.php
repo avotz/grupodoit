@@ -45,7 +45,7 @@ $first = false;
                     }
                     ?>
                    <div class="portfolio-item animated revealslide">
-                        <h3> <?php the_title() ?></h3>
+                        <!-- <h3> <?php /*the_title() */?></h3> -->
                         <div class="portfolio-item-img featured">
                             <?php if (has_post_thumbnail()) :
 
@@ -103,8 +103,8 @@ $first = false;
 
                     ?>
                    <div class="portfolio-item animated revealslide">
-                        <h3> <?php the_title() ?></h3>
-                        <div class="portfolio-item-img">
+                        <!-- <h3> <?php /*the_title()*/ ?></h3> -->
+                        <div class="portfolio-item-img featured">
                             <?php if (has_post_thumbnail()) :
 
                                 $id = get_post_thumbnail_id($post->ID);

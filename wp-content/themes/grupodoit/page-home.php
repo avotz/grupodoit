@@ -97,6 +97,7 @@ get_header();
           <?php endif; ?>
         
         <div class="section section-portfolio" id="section-portfolio">
+            <a href="#portfolio/" class="custom-fp-prev"></a>
           <div class="slide" id="portfolio-home" data-anchor="portfolio-home">
                 <div class="info-portfolio">
                   <h2><?php pll_e('Portfolio'); ?></h2>
@@ -253,14 +254,18 @@ get_header();
             <?php else : ?>
                 <div class="section section-contact" id="section-contact" style="background-color: #DA3A3F">
             <?php endif; ?>
-                <div class="info flex-container-sb">
-                      <div class="info-img">
-                        
-                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.2805620397944!2d-85.59501248471683!3d10.557204366087396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9fd53076a47e0f%3A0xf1f9ae736cb9eb35!2sEl+Lagar+Do+It+Center!5e0!3m2!1ses-419!2scr!4v1532454515333" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                      </div>
+                <div class="info">
+                      
                       <div class="info-content">
                            <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
+                           <div class="social">
+                                <a href="#"><span class="icon"><i class="fas fa-mobile-alt"></i></span> 9999-9999 </a>
+                                <a href="https://www.google.com/maps/place/El+Lagar+Do+It+Center/@10.5572044,-85.5950125,17z/data=!4m12!1m6!3m5!1s0x8f9fd53076a47e0f:0xf1f9ae736cb9eb35!2sEl+Lagar+Do+It+Center!8m2!3d10.5571991!4d-85.5928238!3m4!1s0x8f9fd53076a47e0f:0xf1f9ae736cb9eb35!8m2!3d10.5571991!4d-85.5928238" target="_blank"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Comunidad, Guanacaste </a>
+                                <a href="#"><span class="icon"><i class="fas fa-envelope"></i></span> info@grupodoit.com </a>
+                            </div>
                             <?php the_content(); ?>
+
+                            
                       </div>
                          
                         
