@@ -5131,16 +5131,19 @@ html, body {
 .section-history .info {
   color: #000;
   text-shadow: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .section-history .info-img {
-  width: 42%;
-  height: 350px;
+  width: 100%;
+  height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-color: white;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .section-history .info-img:after {
@@ -5154,11 +5157,34 @@ html, body {
 }
 
 .section-history .info-content {
-  width: 55%;
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: .5rem;
 }
 
 .section-history .info p {
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .section-history .info {
+    font-size: 1.5rem;
+  }
+  .section-history .info-img {
+    width: 42%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 350px;
+  }
+  .section-history .info-content {
+    width: 55%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .section-portfolio {
@@ -5276,6 +5302,17 @@ html, body {
 
 .section-contact .wpcf7 {
   text-align: left;
+}
+
+.fp-viewing-portfolio-portfolio-home .fp-controlArrow.fp-next,
+.fp-viewing-portfolio-portfolio-home .fp-controlArrow.fp-prev {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .fp-viewing-portfolio-portfolio-home .fp-controlArrow.fp-next {
+    display: block !important;
+  }
 }
 
 .fp-viewing-portfolio-portfolio-home .custom-fp-prev {
