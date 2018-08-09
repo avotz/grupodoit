@@ -259,7 +259,9 @@ get_header();
                       <div class="info-content">
                            <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
                            <div class="social">
-                                <a href="#"><span class="icon"><i class="fas fa-mobile-alt"></i></span> 9999-9999 </a>
+                                <a href="#"><span class="icon"><i class="fas fa-mobile-alt"></i></span>2667-0912</a>
+                                 <a href="#"><span class="icon"><i class="fas fa-mobile-alt"></i></span>2667-0906</a>
+                                 <a href="#"><span class="icon"><i class="fas fa-mobile-alt"></i></span>2667-0907</a>
                                 <a href="https://www.google.com/maps/place/El+Lagar+Do+It+Center/@10.5572044,-85.5950125,17z/data=!4m12!1m6!3m5!1s0x8f9fd53076a47e0f:0xf1f9ae736cb9eb35!2sEl+Lagar+Do+It+Center!8m2!3d10.5571991!4d-85.5928238!3m4!1s0x8f9fd53076a47e0f:0xf1f9ae736cb9eb35!8m2!3d10.5571991!4d-85.5928238" target="_blank"><span class="icon"><i class="fas fa-map-marker-alt"></i></span> Comunidad, Guanacaste </a>
                                 <a href="#"><span class="icon"><i class="fas fa-envelope"></i></span> info@grupodoit.com </a>
                             </div>

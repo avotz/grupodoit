@@ -50,7 +50,7 @@ if(isHome()){
         scrollHorizontally: false,
         slidesNavigation: false,
         scrollOverflow: true,
-        loopBottom: true,
+        loopBottom: false,
         loopHorizontal: false,
         navigation: false,
         css3: true,

@@ -371,7 +371,7 @@ html,body{
     
 }
 .section-contact{
-    padding: 3% 6% 0 6%;
+    padding: 0% 6% 0 6%;
      .info{
          font-size: 1.2rem;
          &-img{
@@ -401,15 +401,30 @@ html,body{
             display: inline-block;
             padding: .5rem;
             color: white;
+            font-size: 14px;
+            line-height: 18px;
         }
         .icon{
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: $rojo;
             padding-right: .5rem;
         }
     }
     .wpcf7{
         text-align: left;
+    }
+}
+.wpcf7-form{
+    p{
+        margin-bottom: 0;
+    }
+    div.wpcf7-validation-errors{
+        margin: 0;
+        background-color: $rojo;
+    }
+    span.wpcf7-not-valid-tip{
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 .fp-viewing-portfolio-portfolio-home{
