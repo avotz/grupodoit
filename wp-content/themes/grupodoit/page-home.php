@@ -34,7 +34,7 @@ get_header();
                       </div>
 
                     </div>
-                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio2.jpg')">
+                    <!-- <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio2.jpg')">
                         <div class="banner-slide-title">
                           <?php if (get_locale() == 'es_ES') : ?>
                         <h2>Te ayudamos a construir tu futuro</h2>
@@ -44,7 +44,7 @@ get_header();
                          
 
                         </div>
-                    </div>
+                    </div> -->
                     <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio3.jpg')">
                         <div class="banner-slide-title">
                         <?php if (get_locale() == 'es_ES') : ?>
@@ -93,9 +93,31 @@ get_header();
               <?php endif; ?>
                 
                   <div class="info flex-container-sb">
-                      <div class="info-img animated reveal" style="background-image: url('<?php echo esc_url($thumb_url[0]) ?>');"></div>
+                      <div class="info-img animated reveal">
+                    
+                        <?php $images = rwmb_meta('rw_page_gallery', 'type=image&size=history-thumb');
+
+                        if ($images) : ?>
+					
+                            <div class="history-gallery flex-container-sb">
+                                 
+                        
+                                <?php foreach ($images as $image) {
+                                   
+                                    ?>
+
+                                    
+                                    <a href="<?php echo esc_url($image['full_url']) ?>" class="history-gallery-item image-link">
+                                        <img src="<?php echo esc_url($image['url']) ?>" alt="Foto">
+                                    </a>
+                                <?php 
+                                 } ?>
+                                
+                            </div>
+                        <?php endif; ?>  
+                      </div>
                       <div class="info-content">
-                            <?php the_title('<h2 class="entry-subtitle">', '</h2>'); ?>
+                            <?php /*the_title('<h2 class="entry-subtitle">', '</h2>');*/ ?>
                             <?php the_content(); ?>
                       </div>
                          
@@ -108,7 +130,7 @@ get_header();
           <?php endif; ?>
         
         <div class="section section-portfolio" id="section-portfolio">
-            <a href="#portfolio/" class="custom-fp-prev"></a>
+            <!-- <a href="#portfolio/" class="custom-fp-prev"></a> -->
           <div class="slide" id="portfolio-home" data-anchor="portfolio-home">
                 <div class="info-portfolio">
                   <h2><?php pll_e('Portfolio'); ?></h2>
@@ -208,7 +230,7 @@ get_header();
 
                      <?php 
                     $postType = 'tourism';
-                    include(locate_template('template-parts/content-slide.php'));
+                    include(locate_template('template-parts/content-slide-tourism.php'));
                      //get_template_part( 'template-parts/content-retail.php'); ?>
                  
                   <?php endwhile; ?>
@@ -223,8 +245,9 @@ get_header();
 
                      <?php 
                     $postType = 'gas-station';
-                    include(locate_template('template-parts/content-slide-gas.php'));
-                     //get_template_part( 'template-parts/content-retail.php'); ?>
+                    include(locate_template('template-parts/content-slide.php'));
+                    //include(locate_template('template-parts/content-slide-gas.php'));
+                   ?>
                  
                   <?php endwhile; ?>
                   <!-- post navigation -->

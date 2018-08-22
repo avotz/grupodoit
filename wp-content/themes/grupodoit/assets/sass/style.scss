@@ -198,7 +198,7 @@ html,body{
              color: white;
              font-size:1.3rem;
              line-height: 35px;
-             max-width: 960px;
+             max-width: 1200px;//960px;
              margin: 0 auto;
              text-shadow: 1px 1px 2px rgba(0,0,0,.75);
              font-weight: 300;
@@ -235,9 +235,100 @@ html,body{
     background-size: cover;
 }
 .section-history{
-    background-image: url(../img/history.jpg);
+    //background-image: url(../img/history.jpg);
     padding: 0 6% 0 6%;
     background-color: #e3e3e3;
+    .info{
+         color: #000;
+         text-shadow: none;
+         font-size: 1rem;
+        
+         &-img{
+             width: 100%;//42%;
+             //height: 250px;
+             background-size: cover;
+             background-repeat: no-repeat;
+             position: relative;
+             //background-color: white;
+             order: 2;
+            //  &:after{
+            //     content: '';
+            //     position: absolute;
+            //     left:-5px;
+            //     right: -5px;
+            //     bottom: -5px;
+            //     top: -5px;
+            //     border: 2px solid #c3c3c3;
+                
+            //  }
+           .history-gallery{
+                a{
+                    padding: .5rem;
+                    width: 50%;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+         }
+         &-content{
+             width: 100%;//55%;
+             order: 1;
+             margin-bottom: .5rem;
+             text-align: left;
+             padding-top: 4%;
+             h2{
+                 //text-align: center;
+                 font-weight: 100;
+                 margin-bottom: 2rem;
+                 strong{
+                     font-weight: 900;
+                     
+                 }
+                 &:after{
+                    margin: 0 0;
+                    
+                }
+             }
+         }
+         p{
+                font-weight: 400;
+             }
+        
+        h3{
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+@media screen and (min-width: 768px){
+.section-history{
+
+        .info{
+            font-size: 1.2rem;
+            &-img{
+                width: 49%;
+                order: 2;
+                //height: 350px;
+            }
+            &-content{
+                width: 49%;
+                order: 1;
+                h2{
+                    font-size: 4.5rem;
+                    line-height: 3.5rem;
+                    margin-bottom: 3rem;
+                    strong{
+                        font-size: 3rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+.slide-tourism{
     .info{
          color: #000;
          text-shadow: none;
@@ -249,44 +340,83 @@ html,body{
              background-size: cover;
              background-repeat: no-repeat;
              position: relative;
-             background-color: white;
+             //background-color: white;
              order: 2;
-             &:after{
-                content: '';
+             .external-link-img{
                 position: absolute;
-                left:-5px;
-                right: -5px;
-                bottom: -5px;
-                top: -5px;
-                border: 2px solid #c3c3c3;
-                
+                left: 0;
+                right: 0;
+                top:0;
+                bottom: 0;
              }
+           
          }
          &-content{
              width: 100%;//55%;
              order: 1;
              margin-bottom: .5rem;
+             text-align: left;
+             padding-top: 4%;
+             h2{
+                 //text-align: center;
+                 color: #3b3b3b;
+                 font-weight: 900;
+                 margin-bottom: 2rem;
+                 strong{
+                     font-weight: 900;
+                     
+                 }
+                 &:after{
+                    margin: 0 0;
+                    
+                }
+             }
          }
          p{
                 font-weight: 400;
              }
+        
+        h3{
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        
     }
 }
 @media screen and (min-width: 768px){
-.section-history{
+.slide-tourism{
 
         .info{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             &-img{
-                width: 42%;
-                order: 1;
+                width: 49%;
+                order: 2;
                 height: 350px;
             }
             &-content{
-                width: 55%;
-                order: 2;
+                width: 49%;
+                order: 1;
+                h2{
+                    font-size: 2.3rem;
+                    line-height: 3.5rem;
+                    margin-bottom: 3rem;
+                    strong{
+                        font-size: 3rem;
+                        display: block;
+                    }
+                }
             }
         }
+    }
+}
+.external-link{
+    background-color: $rojo;
+    color:white;
+    border-radius: 5px;
+    padding: .5rem;
+    &:hover{
+        background-color: white;
+        color:$rojo;
     }
 }
 .section-portfolio{
@@ -294,6 +424,10 @@ html,body{
     &.fp-auto-height{
         padding: 6% 6% 0 6%;
     }
+    h2{
+        margin-bottom: 2rem;
+    }
+    
     .info-portfolio{
          h2{
                 text-transform: uppercase;
@@ -319,6 +453,7 @@ html,body{
             width: 100%;
             margin-bottom:1rem;
             text-align: center;
+            
             &-img{
                 
                 img{
@@ -386,7 +521,7 @@ html,body{
          }
          &-content{
              width: 100%;
-             max-width: 650px;
+             max-width: 980px;
              margin: 0 auto;
              h2{
                  &:after{
@@ -397,6 +532,7 @@ html,body{
     }
     .social{
         color: white;
+        margin-bottom: 1rem;
         a{
             display: inline-block;
             padding: .5rem;
@@ -416,8 +552,16 @@ html,body{
     }
 }
 .wpcf7-form{
+    .form-fields-container{
+        > div{
+            width: 33%;
+        }
+    }
     input[type="text"],input[type="email"], textarea{
         background-color: rgba(255,255,255,.5) !important;
+    }
+    textarea{
+        height: 200px;
     }
     p{
         margin-bottom: 0;
@@ -461,7 +605,7 @@ html,body{
 }
 .fp-controlArrow.fp-prev{
     border-color: transparent $rojo transparent transparent;
-    display: none !important;
+    //display: none !important;
 }
 .custom-fp-prev{
     -webkit-user-select: none;

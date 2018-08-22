@@ -42,6 +42,7 @@ if ( ! function_exists( 'grupodoit_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_image_size('portfolio-thumb', 450, 300, true);
+		add_image_size('history-thumb', 564, 550, true);
 		add_image_size('item-banner', 1920, 1080, true);
 
 		// This theme uses wp_nav_menu() in one location.
@@ -168,3 +169,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/translate-strings.php';
 
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/cpt.php';

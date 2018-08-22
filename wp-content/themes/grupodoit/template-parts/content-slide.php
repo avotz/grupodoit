@@ -50,15 +50,34 @@
 
                             ?>
                                 
+                                <?php 
+                                    $link = rwmb_meta('rw_service_external_link');
+                                    $link_name = rwmb_meta('rw_service_external_link_name');
+                                    if ($link) : ?>
+                                    <a href="<?= $link ?>" title="<?= $link_name ? $link_name : $link ?>" class="external-link-img" target="_blank">
+                                      <img src="<?php echo esc_url($thumb_url[0]) ?>">
+                                    </a>
+                                    <?php 
+                                    else: ?>
+                                        <img src ="<?php echo esc_url($thumb_url[0]) ?>" />
+                                    <?php  
+                                     endif; 
+                                    ?>
                                 
                                 
-                                <img src="<?php echo esc_url($thumb_url[0]) ?>">
                                 
                             <?php endif; ?>
                         
                         </div>
                         <div class="portfolio-item-content">
                             <?php the_content() ?>
+                            <?php 
+                              $link = rwmb_meta('rw_service_external_link');
+                              $link_name = rwmb_meta('rw_service_external_link_name');
+                               if($link): ?>
+                                <a href="<?= $link ?>" title="<?= $link_name ? $link_name : $link ?>" class="external-link" target="_blank"><?= $link_name ? $link_name : $link ?> <i class="fas fa-external-link-alt"></i></a>
+                            <?php 
+                                endif; ?>
                         </div>
                     </div>
                
