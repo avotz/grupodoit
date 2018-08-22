@@ -391,7 +391,7 @@ html,body{
             &-img{
                 width: 49%;
                 order: 2;
-                height: 350px;
+                height: 400px;
             }
             &-content{
                 width: 49%;
@@ -565,10 +565,14 @@ html,body{
     }
     p{
         margin-bottom: 0;
+        font-weight: 900;
+    }
+    label{
+        font-weight: 900;
     }
     div.wpcf7-validation-errors{
         margin: 0;
-        background-color: $rojo;
+        background-color: white;
     }
     span.wpcf7-not-valid-tip{
         font-size: 14px;

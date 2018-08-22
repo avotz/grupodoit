@@ -30,7 +30,7 @@ function grupodoit_meta_box($meta_boxes)
     $meta_boxes[] = array(
         'id' => 'additional',
         'title' => esc_html__('Additional Information', 'grupodoit'),
-        'post_types' => array('retail','tourism','building-material','real-estate','gas-station','no-profit'),
+        'post_types' => array('retail','tourism','building-material','real-estate','gas-station','non-profit'),
         'context' => 'advanced',
         'priority' => 'default',
         'autosave' => false,
