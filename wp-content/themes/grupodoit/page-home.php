@@ -62,12 +62,12 @@ get_header();
                   </div>
 
             </div>
-            <a href="#portfolio" class="portfolio-link">
-                   <span>   <?php if (get_locale() == 'es_ES') : ?>
+            <a href="#history" class="portfolio-link">
+                   <!-- <span>   <?php /*if (get_locale() == 'es_ES') : ?>
                         Haz scroll para conocer nuestro servicios
                         <?php else : ?>
                         Scroll to meet the services
-                        <?php endif; ?></span>
+                        <?php endif; */?></span> -->
              		<span class="icon">
              			<i class="fas fa-angle-down"></i>
              			
