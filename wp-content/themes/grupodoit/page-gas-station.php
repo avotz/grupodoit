@@ -26,7 +26,7 @@ get_header();
 		
 			$postType = 'gas-station';
 	
-			include(locate_template('template-parts/content-slide.php'));
+			include(locate_template('template-parts/content-slide-gas.php'));
 			//include(locate_template('template-parts/content-slide-gas.php'));
 			
 

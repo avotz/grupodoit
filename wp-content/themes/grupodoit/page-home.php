@@ -34,8 +34,8 @@ get_header();
                       </div>
 
                     </div>
-                    <!-- <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio2.jpg')">
-                        <div class="banner-slide-title">
+                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner-do-2it.jpg')">
+                        <!-- <div class="banner-slide-title">
                           <?php if (get_locale() == 'es_ES') : ?>
                         <h2>Te ayudamos a construir tu futuro</h2>
                         <?php else : ?>
@@ -43,8 +43,8 @@ get_header();
                         <?php endif; ?>
                          
 
-                        </div>
-                    </div> -->
+                        </div> -->
+                    </div>
                     <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio3.jpg')">
                         <div class="banner-slide-title">
                         <?php if (get_locale() == 'es_ES') : ?>
@@ -245,7 +245,7 @@ get_header();
 
                      <?php 
                     $postType = 'gas-station';
-                    include(locate_template('template-parts/content-slide.php'));
+                    include(locate_template('template-parts/content-slide-gas.php'));
                     //include(locate_template('template-parts/content-slide-gas.php'));
                    ?>
                  

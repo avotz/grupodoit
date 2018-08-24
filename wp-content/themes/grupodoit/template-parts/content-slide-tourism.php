@@ -51,12 +51,12 @@
                                 
                                 
                             <div class="info-img animated reveal" style="background-image: url('<?php echo esc_url($thumb_url[0]) ?>">
-                                    <?php 
-                                        $link = rwmb_meta('rw_service_external_link');
+                                    <!-- <?php 
+                                       /* $link = rwmb_meta('rw_service_external_link');
                                         $link_name = rwmb_meta('rw_service_external_link_name');
                                         if ($link) : ?>
                                         <a href="<?= $link ?>" title="<?= $link_name ? $link_name : $link ?>" class="external-link-img" target="_blank"></a>
-                                    <?php  endif; ?>
+                                    <?php  endif;*/ ?> -->
                                 
                             </div>
                                 
