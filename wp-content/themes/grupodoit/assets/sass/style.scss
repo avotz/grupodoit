@@ -197,7 +197,7 @@ html,body{
         .info{
              color: white;
              font-size:1.3rem;
-             line-height: 35px;
+             line-height: 32px;
              max-width: 1200px;//960px;
              margin: 0 auto;
              text-shadow: 1px 1px 2px rgba(0,0,0,.75);
@@ -227,10 +227,18 @@ html,body{
     .section{
         .info{
             font-size:1.8rem;
+   
+        }
+    }
+}
+@media screen and (min-width: 1368px){
+    .section{
+        .info{
+  
             line-height: 40px;
         }
     }
-}  
+}    
 .slide{
     background-size: cover;
 }
@@ -277,7 +285,7 @@ html,body{
              order: 1;
              margin-bottom: .5rem;
              text-align: left;
-             padding-top: 4%;
+             padding-top: 8%;
              h2{
                  //text-align: center;
                  font-weight: 100;
@@ -307,7 +315,7 @@ html,body{
 .section-history{
 
         .info{
-            font-size: 1.2rem;
+            font-size: 1rem;
             &-img{
                 width: 49%;
                 order: 2;
@@ -397,6 +405,7 @@ html,body{
             &-content{
                 width: 49%;
                 order: 1;
+                line-height: 32px;
                 h2{
                     font-size: 2.3rem;
                     line-height: 3.5rem;
