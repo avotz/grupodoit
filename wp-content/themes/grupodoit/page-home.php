@@ -23,7 +23,7 @@ get_header();
                  
                   <div class="banner-slider">
                
-                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio.jpg')">
+                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner1.jpg')">
                        <div class="banner-slide-title">
                         
                         <?php if(get_locale() == 'es_ES'): ?>
@@ -45,7 +45,7 @@ get_header();
 
                         </div> -->
                     </div>
-                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/do-it-edificio3.jpg')">
+                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner2.jpg')">
                         <div class="banner-slide-title">
                         <?php if (get_locale() == 'es_ES') : ?>
                         <h2>Somos Grupo Do It</h2>
